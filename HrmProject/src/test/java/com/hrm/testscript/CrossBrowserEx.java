@@ -25,8 +25,9 @@ public class CrossBrowserEx {
 
 		if(browser.equalsIgnoreCase("firefox")){
 		
-		System.setProperty("","Path of your gecko driver");
-		driver = new FirefoxDriver();
+			System.out.println("Executed on FireFox Successfully!!!");
+		//System.setProperty("","Path of your gecko driver");
+		//driver = new FirefoxDriver();
 		}
 		
 		else if(browser.equalsIgnoreCase("chrome")){
