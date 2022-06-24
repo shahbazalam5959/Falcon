@@ -9,12 +9,12 @@
     		</classes>
  	</test> <!-- Test -->
   
-  	<test name="FirefoxTest">
+ <!-- 	<test name="FirefoxTest">
  		<parameter name="browser" value="Firefox" />
     		<classes>
       			<class name="com.hrm.testscript.CrossBrowserEx"/>
     		</classes>
- 	</test> <!-- Test -->
+ 	</test>  -->
  	
  	<test name="EdgeTest">
  		<parameter name="browser" value="edge" />
