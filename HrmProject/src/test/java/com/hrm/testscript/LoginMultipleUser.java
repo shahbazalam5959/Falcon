@@ -45,11 +45,11 @@ public class LoginMultipleUser {
 		driver.findElement(By.xpath("//button[contains(text(),\"Login\")]")).click();
 		
 		try {
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		
+		Thread.sleep(3000);
 		driver.navigate().back();
 		
 	}
