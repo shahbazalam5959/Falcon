@@ -5,6 +5,7 @@
    
  		<parameter name="browser" value="Chrome" />
  		<parameter name="appUrl" value="https://www.google.com/" />
+    
     		<classes>
       			<class name="com.hrm.testscript.JenkinsE2ETest"/>
     		</classes>

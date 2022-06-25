@@ -44,7 +44,7 @@ public class CrossBrowserEx {
 	
 		throw new Exception("Sorry!!! We do not support this browser....Try Again with different browser");
 		}
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
 

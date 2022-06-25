@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.openqa.selenium.WebElement;
 
 public class LoginMultipleUser {
 	
@@ -29,11 +30,13 @@ public class LoginMultipleUser {
 	@Test(dataProvider = "loginCredentials")
 	public void TestMultipleUserlogin(String username, String password) throws Exception
 	{	
-		
+		Thread.sleep(2000);
 		driver.navigate().refresh();
 		
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//*[contains(@placeholder,\"name\")]")).sendKeys(username);
+		WebElement ele = driver.findElement(By.xpath("//*[contains(@placeholder,\"name\")]"));
+		ele.isDisplayed();
+		ele.sendKeys(username);
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[contains(@placeholder,\"Password\")]")).sendKeys(password);
 		try {
@@ -43,13 +46,14 @@ public class LoginMultipleUser {
 			e.printStackTrace();
 		}
 		driver.findElement(By.xpath("//button[contains(text(),\"Login\")]")).click();
+		System.out.println("User Logged In Successfully :"+username);
 		
 		try {
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		
+		Thread.sleep(3000);
 		driver.navigate().back();
 		
 	}
