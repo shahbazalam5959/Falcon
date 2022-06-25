@@ -121,10 +121,12 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+					 <!--	<suiteXmlFile>testng.xml</suiteXmlFile>
 						<suiteXmlFile>testngCrossBrowser.xml</suiteXmlFile>
 						<suiteXmlFile>testngDataDriven.xml</suiteXmlFile>
-						<suiteXmlFile>testngNew.xml</suiteXmlFile>
+						<suiteXmlFile>testngNew.xml</suiteXmlFile> -->
+						
+						<suiteXmlFile>${testngpath}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
