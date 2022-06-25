@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
    
  		<parameter name="browser" value="Chrome" />
- 		
+ 		<parameter name="APPLICATION_BASE_URL" value="" />
     		<classes>
       			<class name="com.hrm.testscript.JenkinsE2ETest"/>
     		</classes>
