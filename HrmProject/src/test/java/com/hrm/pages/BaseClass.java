@@ -91,7 +91,7 @@ public class BaseClass {
 //		
 //	}   
 
-	@Parameters({"browser", "APPLICATION_BASE_URL"})
+	@Parameters({"browser", "appUrl"})
 	@BeforeMethod
 	public void initialSetup(Method testMethod)
 	{

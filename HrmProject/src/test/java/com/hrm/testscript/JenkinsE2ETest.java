@@ -19,7 +19,7 @@ import com.hrm.pages.BaseClass;
 
 public class JenkinsE2ETest extends BaseClass {
 
-	WebDriver driver;
+	//WebDriver driver;
 	
 
 	@Test
