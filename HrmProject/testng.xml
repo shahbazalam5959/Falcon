@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.hrm.testscript.Tabs"/>
+      <class name="com.hrm.testscript.regression"/>
     </classes>
   
   </test> <!-- Test -->

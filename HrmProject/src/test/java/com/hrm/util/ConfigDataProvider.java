@@ -30,7 +30,7 @@ public class ConfigDataProvider {
 	
 	 public String getBrowser()
 	 {
-		 return prop.getProperty("Browser");
+		 return prop.getProperty("browser");
 	 }
 	 
 	 public String getStatgingUrl()
